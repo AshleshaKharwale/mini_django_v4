@@ -1,0 +1,7 @@
+venv
+*.pyc
+*.xml
+*.log
+.idea
+sqlite3.exe
+secrets

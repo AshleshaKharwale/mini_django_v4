@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Applicants</title>
+</head>
+<body>
+<ul>
+  {% for candidate in object_list %}
+  <li>
+ {{candidate.name}}
+  </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
