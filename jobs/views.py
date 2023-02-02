@@ -73,3 +73,7 @@ def get_job_description(request, job_id):
     except ObjectDoesNotExist:
         jd = None
     return render(request, "jobs/job_description.html", {"job_desc": jd, "job_id": job_id})
+
+"""
+select * from JobDescription where id = job_id;
+"""

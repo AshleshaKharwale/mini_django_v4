@@ -11,6 +11,9 @@ class Portal(models.Model):
     def __str__(self):
         return self.name
 
+"""
+create table Portal(name varchar(250) unique, description varchar(250));
+"""
 
 class JobTitle(models.Model):
     title = models.CharField(max_length=250)
