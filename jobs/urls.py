@@ -32,6 +32,15 @@ urlpatterns = [
          views_v2.ApplicantUpdate.as_view(),
          name="ap_update"),  # default template name - 'jobs/applicant_form.html'.
 
+    path("v2/applicants/create/", views_v2.ApplicantCreate.as_view(),
+         name="ap_create"),
+
+    path("v2/applicants/delete/<pk>",views_v2.ApplicantDelete.as_view(),
+         name="ap_delete"),
+
+    path("v2/applicants/details/<pk>", views_v2.ApplicantDetails.as_view(),
+         name="ap_details"),
+
     path("v3/applicants/", views_v3.Applicants.as_view()),
     path("v4/jobtitles/", views_v4.jobtitle_list, name="v4_jobtitles_list")
 ]
